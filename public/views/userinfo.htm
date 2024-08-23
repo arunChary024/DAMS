@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/dams.css">
+    <title>DAMS - Doctor's Appointment Management System</title>
+</head>
+<body class="off-white-bg">
+    
+    <div class="flex-row">
+        <div id="s-menu" class="width-20 width-lx-25 min-height-100 deep-blue-bg overflow-y-auto">
+            <!-- <div class="font-30 black-bg white-text center-text bold-text font-gotham padding-all-10">DAMS</div>
+            <div>
+                <div class="menu-link">
+                    <a href="">Personal Info</a>
+                </div>
+                <div class="menu-link">
+                    <a href="">Book Appointment</a>
+                </div>
+                <div class="menu-link">
+                    <a href="">Appointment History</a>
+                </div>
+                <div class="menu-link">
+                    <a href="">Logout</a>
+                </div>
+            </div> -->
+        </div>
+        <div class="width-80 width-lx-75 width-l-100 width-m-100 width-s-100 min-height-100">
+            <div class="padding-all-20"></div>
+
+            <div class="width-80 width-lx-90 width-l-90 width-m-90 width-s-95 margin-auto font-helvetica">
+                <div class="banner card flex-column justify-content-center align-items-center padding-all-10">
+                    <div class="center-text white-text uppercase bold-text">
+                        <div class="font-gotham font-30 ">Doctor's Appointment Management System</div>
+                        <br />
+                        <div>Personal Information</div>
+                    </div>
+                </div>
+                <br />
+                <br />
+
+                <div class="width-50 width-lx-60 width-l-65 width-m-90 width-s-100 margin-auto white-bg card padding-all-10" style="border-radius: 10px">
+                    <div class="bold-text center-text uppercase">Update Personal Information</div>
+                    <br />
+                    <form class="form" onsubmit="onSubmit(event)">
+                        <div>
+                            <label>Firstname</label>
+                            <input type="text" id="firstname" disabled />
+                        </div>
+                        <br />
+                        <div>
+                            <label>Lastname</label>
+                            <input type="text" id="lastname" disabled />
+                        </div>
+                        <br />
+                        <div>
+                            <label>Phone</label>
+                            <input id="phone" name="phone" onchange="onChange(event)" />
+                        </div>
+                        <br />
+                        <div>
+                            <button id="btn" class="white-text blue-bg width-100">Update Info</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="padding-all-50"></div>
+        </div>
+    </div>
+
+    <script src="../scripts/userauth.js"></script>
+    <script src="../scripts/usersidemenu.js"></script>
+    <script src="../scripts/toast.js"></script>
+    <script src="../scripts/userinfo.js"></script>
+</body>
+</html>

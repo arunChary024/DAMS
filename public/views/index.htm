@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/dams.css">
+    <title>DAMS - Doctor's Appointment Management System</title>
+</head>
+<body class="min-height-100 off-white-bg">
+    <div class="padding-all-50"></div>
+
+    <div class="width-30 width-lx-40 width-l-60 width-m-80 width-s-90 margin-auto login-form font-helvetica">
+        <div class="font-30 center-text deep-blue-bg white-text padding-all-15">WELCOME TO DAMS</div>
+        <br />
+        <div class="padding-all-10">
+            <div id="title" class="font-20 bold-text font-gotham">Login</div>
+            <br />
+            <form onsubmit="onSubmit(event)">
+                <div id="reg" class="font">
+                    <div>
+                        <label>Firstname</label>
+                        <input type="text" name="firstname" onchange="onChange(event)" />
+                    </div>
+                    <br />
+                    <div>
+                        <label>Lastname</label>
+                        <input type="text" name="lastname" onchange="onChange(event)" />
+                    </div>
+                    <br />
+                    <div>
+                        <label>Phone Number</label>
+                        <input type="text" name="phone" maxlength="10" onchange="onChange(event)" />
+                    </div>
+                    <br />
+                </div>
+                <div>
+                    <label>Email</label>
+                    <input type="email" name="email" onchange="onChange(event)" />
+                </div>
+                <br />
+                <div>
+                    <label>Password</label>
+                    <input type="password" name="password" onchange="onChange(event)" />
+                </div>
+                <br />
+                <div><span id="cap">Don't have an account?</span> <span onclick="setReg()" id="capBtn" class="blue-text cursor-pointer red-hover">Create a new account</span></div>
+                <br />
+                <div>
+                    <button id="btn" class="blue-bg white-text">Login</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="padding-all-50"></div>
+
+    <script src="../scripts/toast.js"></script>
+    <script src="../scripts/index.js"></script>
+</body>
+</html>
